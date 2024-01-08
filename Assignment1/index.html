@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASSIGNMENT 1</title>
+  <link rel="stylesheet" href="./index.js">
+</head>
+
+<body>
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- THEORY --> 
+  <!-- Q1.WHAT IS EMMET
+  ANS1. EMMET USE DIFFRENT ABBREVATION AND SHHORT EXPRESSION DEPENDING WHATS PROCCED THEN DYNAMICALL CONVERT THE ABBREVATION INTO FULL CODE.
+  Q2.DIFFRENCE B/T LIBRARY AND FRAMWORK
+  ANS2.LIBRARY TARGET A SPECIFIC FUNCTIONALITY AND FRAMEWORK TRIES TO PROVIDE EVERYTHING REQUIRED TO DEVELOP A COMPLETE APPLICATION.
+  Q3.WHAT IS CDN WHY DO WE USE IT.
+  ANS3.CDN IS REDUCE LATENCY IR REDUCE THE DELAY IN COMMUNICATION CREATED BY A NETWORK DESIGN,
+  Q4.WHY IS REACT KANOWS AS REACT.
+  ANS4. REACT QUICKLY CHANGE WITHOUT RELAOADING WHOLE PAGE IT USES VIRTUAL DOM.
+  Q5.WHAT IS CRROSGORIING IN SCRIPT TAG.
+  ANS5.SETS THE MODE IF THE REQUEST TO AN HTTP CORS REQUEST.
+  Q6.DIFFRENCE B/T REACT AND REACTDOM
+  ANS6.REACT LIBRARY IS RESPONSIBLE FOR REACTING VIEW AND REACTDOM IS RESPONSIBLE FOR ACTIULLY RENDRING UI IN THE BROWSER -->
+  <div id="root"></div>
+
+  <script>
+    // using js //
+    // const heading =document.createElement('hi');
+    // heading.innerHTML ='This Is A First Programe'
+    // const root =document.getElementById('root')
+    // root.appendChild(heading)
+  // using react //
+  // const heading = React.createElement('hi',{},'CREATE USING REACT ')
+  // const root =ReactDOM.createRoot(document.getElementById('root'))
+  // root.render(heading)
+
+  // using multiple tags //
+  const parent =React.createElement("div",{id:'parent'},React.createElement("div",{id:"child"},[React.createElement('h1',{},"Hello This is nested Tag!!"),React.createElement('h2',{},"Hello This is nested  2 Tag!!")]))
+  const root =ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(parent)
+
+  </script>
+</body>
+</html>
